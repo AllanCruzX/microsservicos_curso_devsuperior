@@ -17,7 +17,7 @@ public class UserResource {
 
 	@Autowired
 	private UserService service;
-
+	
 	@GetMapping(value = "/search")
 	public ResponseEntity<User> findByEmail(@RequestParam String email) {
 		try {
